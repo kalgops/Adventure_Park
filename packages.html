@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - Packages</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/t&p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Tickets & Packages Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Tickets & Packages</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="leftPadding">
+            <!--users select the type of ticket they want to view, Ala Carte or Package type, here-->
+            <h1>Ticket type:</h1>
+            <table>
+              <tr>
+                <td>
+                    <div class="otherPageBox">
+                        <h2><a href="tickets.html">Ala<br>Carte</a></h2>
+                    </div>
+                </td>
+                  <td></td>
+                <td>
+                    <div class="currentPageBox">
+                        <h2 id="center">Package</h2>
+                    </div>
+                </td>
+              </tr>
+            </table>
+            <p>*Ages 3 and Below Enter <u>FREE</u></p>
+        </div>
+        <br>
+        <!--information of the types of Packages sold-->
+        <div class="packagesBox familyBackground">
+            <h3>Family package</h3>
+            <p>Tickets for a Specified Date<br>
+                - X2 Adult (13 Years Old and Above) tickets<br>
+                - X2 Child (4 to 12 Years Old) tickets
+            </p>
+            <p>From <u>SGD74</u> per package (U.P. From SGD104)</p>
+            <button data-modal-target="#modal1" class="moreDetailsBox">
+                View more details >
+            </button>
+            <div class="modal1" id="modal1">
+                <div class="modal1-header">
+                    <div class="title"><h3>Family package</h3></div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal1-body">
+                    <table>
+                        <tr>
+                            <td><p>ONE-day tickets</p></td>
+                            <td>:<u>SGD110</u> (U.P. SGD140)</td>
+                        </tr>
+                        <tr>
+                            <td><p>ONE-day ticket with Early Entry</p></td>
+                            <td>:<u>SGD130</u> (U.P. SGD160)</td>
+                        </tr>
+                        <tr>
+                            <td><p>ONE-day tickets with Late Entry</p></td>
+                            <td>:<u>SGD74</u> (U.P. SGD104)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="packagesBox friendsBackground">
+            <h3>Friends Trip package</h3>
+            <p>Ticket for a Specified Date<br>
+                - X6 Adult (13 Years Old and Above) tickets
+            </p>
+            <p>From <u>SGD206</u> per package (U.P. From SGD246)</p>
+            <button data-modal-target="#modal2" class="moreDetailsBox">
+                View more details >
+            </button>
+            <div class="modal2" id="modal2">
+                <div class="modal2-header">
+                    <div class="title"><h3>Friends Trip package</h3></div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal2-body">
+                    <table>
+                        <tr>
+                            <td><p>ONE-day tickets</p></td>
+                            <td>:<u>SGD260</u> (U.P. SGD300)</td>
+                        </tr>
+                        <tr>
+                            <td><p>ONE-day ticket with Early Entry</p></td>
+                            <td>:<u>SGD290</u> (U.P. SGD330)</td>
+                        </tr>
+                        <tr>
+                            <td><p>ONE-day tickets with Late Entry</p></td>
+                            <td>:<u>SGD206</u> (U.P. SGD246)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="packagesBox outingBackground">
+            <h3>Outing package</h3>
+            <p>Ticket for a Specified Date<br>
+                - X10 Adult (13 Years Old and Above) tickets
+            </p>
+            <p>From <u>SGD350</u> per package (U.P. From SGD410)</p>
+            <button data-modal-target="#modal3" class="moreDetailsBox">
+                View more details >
+            </button>
+            <div class="modal3" id="modal3">
+                <div class="modal3-header">
+                    <div class="title"><h3>Outing package</h3></div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal3-body">
+                    <table>
+                        <tr>
+                            <td><p>ONE-day tickets</p></td>
+                            <td>:<u>SGD440</u> (U.P. SGD500)</td>
+                        </tr>
+                        <tr>
+                            <td><p>ONE-day ticket with Early Entry</p></td>
+                            <td>:<u>SGD490</u> (U.P. SGD550)</td>
+                        </tr>
+                        <tr>
+                            <td><p>ONE-day tickets with Late Entry</p></td>
+                            <td>:<u>SGD350</u> (U.P. SGD410)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <center>
+            <table>
+                <tr id="leftAlign">
+                    <!--information about the theme park visitors would want to know-->
+                    <th class="informationBox">
+                        <h1 id="textBackgroundColour">Visitors' Information</h1>
+                        <table>
+                            <tr>
+                                <td><p>Opening hours</p></td>
+                                <td><p>: 10:00AM - 8:00PM</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>- Early entry</p></td>
+                                <td><p>: 9:00AM</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>- Late entry</p></td>
+                                <td><p>: 3:00PM</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Click here to view Park Map.</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>------------------------------</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Parking</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>- Cars</p></td>
+                                <td><p>: First hour $2.18<br>Subsequent 15 mins $0.55<br>*Electric vehicles charging
+      services located at B3 car park.</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>- Motorcycles</p></td>
+                                <td><p>: $1.64 per entry</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>------------------------------</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Rentals</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>- Locker</p></td>
+                                <td><p>: $4 for ONE hour<br>$10 for THREE hours<br>$15 for FIVE hours<br>$20 for a FULL DAY</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>- Wheelchair</p></td>
+                                <td><p>: $15 per rent</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>- Stroller</p></td>
+                                <td><p>: $20 per rent</p></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th></th>
+                    <th class="informationBox alignTop">
+                        <!--frequently asked questions about the theme park-->
+                        <h1 id="textBackgroundColour">FAQs</h1>
+                        <div class="faq">
+                            <button class="accordion">
+                                <p>Can I purchase walk-in tickets?</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="pannel">
+                                <p>Yes, you can purchase tickets from the Information Counter from 7:00AM onwards. Sales of tickets for the current day will stop at 7:00PM.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="faq">
+                            <button class="accordion">
+                                <p>Are there ATMs where I can withdraw money using the card issued from my country?</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="pannel">
+                                <p>Yes, there are ATM machines available in the Park.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="faq">
+                            <button class="accordion">
+                                <p>What is the maximum height limit for Adventure Theme Park Carpark?</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="pannel">
+                                <p>The maximum height limit is 2.5 metres.</p>
+                            </div>
+                        </div>
+                        <div class="faq">
+                            <button class="accordion">
+                                <p>Am I allowed to re-enter Universal Studios Singapore, on the same day, after I have exited the park?</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="pannel">
+                                <p>Your admission ticket is not valid for re-entry, and you will not be able to re-enter the park once you have exited.</p>
+                            </div>
+                        </div>                        
+                    </th>
+                </tr>
+            </table>
+            </center>
+    </main>
+    
+    <script>
+        //js for "View more details" popups
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+
+        //open & close Family package's "View more details >" popup
+        openModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const modal1 = document.querySelector(button.dataset.modalTarget)
+            openModal(modal1)
+          })
+        })
+        closeModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const modal1 = button.closest('.modal1')
+            closeModal(modal1)
+          })
+        })
+        function openModal(modal1) {
+          if (modal1 == null) return
+          modal1.classList.add('active')
+        }
+        function closeModal(modal1) {
+          if (modal1 == null) return
+          modal1.classList.remove('active')
+        }
+        
+        //open & close Friends Trip package's "View more details >" popup
+        openModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const modal2 = document.querySelector(button.dataset.modalTarget)
+            openModal(modal2)
+          })
+        })
+        closeModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const modal2 = button.closest('.modal2')
+            closeModal(modal2)
+          })
+        })
+        function openModal(modal2) {
+          if (modal2 == null) return
+          modal2.classList.add('active')
+        }
+        function closeModal(modal2) {
+          if (modal2 == null) return
+          modal2.classList.remove('active')
+        }
+        
+        //open & close Outing package's "View more details >" popup
+        openModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const modal3 = document.querySelector(button.dataset.modalTarget)
+            openModal(modal3)
+          })
+        })
+        closeModalButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const modal3 = button.closest('.modal3')
+            closeModal(modal3)
+          })
+        })
+        function openModal(modal3) {
+          if (modal3 == null) return
+          modal3.classList.add('active')
+        }
+        function closeModal(modal3) {
+          if (modal3 == null) return
+          modal3.classList.remove('active')
+        }
+        
+        //js for FAQ dropdown
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              this.parentElement.classList.toggle("active");
+
+              var pannel = this.nextElementSibling;
+
+              if (pannel.style.display === "block") {
+                pannel.style.display = "none";
+              } else {
+                pannel.style.display = "block";
+              }
+            });
+          }
+        //open FAQ dropdown
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        //close FAQ dropdown
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    
+    <footer>
+        <div class="footer-section">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Dinings & Shoppings</a></li>
+                <li><a href="#">Attractions</a></li>
+                <li><a href="#">Visitor Information</a></li>
+                <li><a href="#">Park Map</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Tickets & Packages</h3>
+            <ul>
+                <li><a href="#">Buy Tickets</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Address</h3>
+            <address>
+                Adventure Theme Park,<br>
+                123 Adventure Road,<br>
+                Sentosa Island,<br>
+                Singapore, 098765.<br>
+                Contact: +65 9876 5432
+            </address>
+        </div>
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <!-- Add social media links here -->
+        </div>
+    </footer>
+</body>
+</html>
