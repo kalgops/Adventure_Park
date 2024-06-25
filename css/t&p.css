@@ -23,10 +23,6 @@
     padding-top: 14px;
 }
 
-#leftAlign {
-    text-align: left;
-}
-
 #leftPadding {
     padding-left: 230px;
 }
@@ -106,10 +102,12 @@
     }
 }
 
+/*so that the opacity will not affect h3 in the packages page*/
 h3 {
     position: relative;
 }
 
+/*so that the opacity will not affect p in the packages page*/
 p {
     position: relative;
 }
@@ -135,10 +133,11 @@ p {
     vertical-align: text-top;
     width: 475px;
     box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px inset;
+    text-align: left;
 }
 
 /*text background for informationbox headers*/
-#textBackgroundColour {
+.textBackgroundColour {
     text-align: center;
     border-radius: 20px;
     background-color: #C2BAAF;
