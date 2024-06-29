@@ -1,22 +1,24 @@
-/*box of the current page, Ala Carte or Packagee page, will be coloured*/
+/*box of the current page, Ala Carte or Packages page, will be coloured*/
 .currentPageBox {
     border-radius: 40px;
-    background: #C2BAAF;
+    background: #552500;
     padding: 20px; 
     width: 100px;
     height: 100px;
-    box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px inset;
+    box-shadow: rgb(154, 154, 154) 0px 0px 10px 3px inset;
+    color: white;
     text-align: center;
 }
 
-/*box of the other page, Ala Carte or Packagee page, will not be coloured*/
+/*box of the other page, Ala Carte or Packages page, will not be coloured*/
 .otherPageBox {
     border-radius: 40px;
-    border: 3px solid black;
+    border: 3px solid #552500;
     padding: 20px; 
     width: 100px;
     height: 100px;
     text-align: center;
+    background-color: white;
 }
 
 #center {
@@ -35,6 +37,7 @@
     height: 210px;
     margin: auto;
     box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px;
+    background-color: white;
 }
 
 /*design for box displaying information of the types of tickets in Package page*/
@@ -45,6 +48,7 @@
     height: 250px;
     margin: auto;
     box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px;
+    background-color: white;
 }
 
 /*Family package box background image*/
@@ -115,11 +119,13 @@ p {
 /*"View more details >" box*/
 .moreDetailsBox {
     border-radius: 20px;
-    background: #C2BAAF;
+    border: 1px solid rgb(154, 154, 154);
+    background: #552500;
+    color: white;
     padding: 10px; 
     width: 230px;
     height: 65px;
-    box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px inset;
+    box-shadow: rgb(154, 154, 154) 0px 0px 10px 3px inset;
     font-size: 15px;
     text-align: center;
     cursor: pointer;
@@ -134,15 +140,17 @@ p {
     width: 475px;
     box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px inset;
     text-align: left;
+    background-color: white;
 }
 
 /*text background for informationbox headers*/
 .textBackgroundColour {
     text-align: center;
     border-radius: 20px;
-    background-color: #C2BAAF;
+    background-color: #552500;
     padding: 20px;
-    box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px inset;
+    box-shadow: rgb(154, 154, 154) 0px 0px 10px 3px inset;
+    color: white;
 }
 
 
@@ -172,10 +180,10 @@ p {
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    background-color: #333;
+    background-color: #552500;
     padding-left: 20px;
     padding-right: 20px;
-    color: #C2BAAF;
+    color: white;
 }
 
 /*design for popup close button*/
@@ -184,7 +192,7 @@ p {
     border: none;
     outline: none;
     background: none;
-    color: #C2BAAF;
+    color: white;
     font-size: 3rem;
 }
 
@@ -217,10 +225,10 @@ p {
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    background-color: #333;
+    background-color: #552500;
     padding-left: 20px;
     padding-right: 20px;
-    color: #C2BAAF;
+    color: white;
 }
 
 /*design for popup close button*/
@@ -229,7 +237,7 @@ p {
     border: none;
     outline: none;
     background: none;
-    color: #C2BAAF;
+    color: white;
     font-size: 3rem;
 }
 
@@ -262,10 +270,10 @@ p {
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    background-color: #333;
+    background-color: #552500;
     padding-left: 20px;
     padding-right: 20px;
-    color: #C2BAAF;
+    color: white;
 }
 
 /*design for popup close button*/
@@ -274,7 +282,7 @@ p {
     border: none;
     outline: none;
     background: none;
-    color: #C2BAAF;
+    color: white;
     font-size: 3rem;
 }
 
