@@ -50,7 +50,7 @@ header nav .logo {
   header nav .nav-items {
     order: 2;
     flex: 1;
-    margin-left: 50px;
+    margin-left: 10px;
   }
 
 nav ul {
