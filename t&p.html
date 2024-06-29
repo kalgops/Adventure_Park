@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - Ala Carte</title>
+    <link rel="stylesheet" href= "Assets/css/styles.css">
+    <link rel="stylesheet" href= "Assets/css/t&p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Tickets & Packages Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Tickets & Packages</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="leftPadding">
+            <!--users select the type of ticket they want to view, Ala Carte or Package type, here-->
+            <h2 id="alacarte">Ticket type:</h2>
+            <table>
+              <tr>
+                <td>
+                    <div class="currentPageBox">
+                        <h3>Ala Carte</h3>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="otherPageBox">
+                        <a href="#package"><h3>Package</h3></a>
+                    </div>
+                </td>
+              </tr>
+            </table>
+            <p>*Ages 3 and Below Enter <u>FREE</u></p>
+        </div>
+        <br>
+        <!--information of the types of Ala Carte tickets sold-->
+        <div class="ticketsBox">
+            <h3 id="header">ONE-day ticket</h3>
+            <p>Ticket for a Specified Date
+                <br>
+                - Adult (13 Years Old and Above)
+                <br>
+                - Child (4 to 12 Years Old)
+            </p>
+            <p>
+                Adult <u>SGD50</u> per ticket
+                <br>
+                Child <u>SGD20</u> per ticket
+            </p>
+        </div>
+        <br><br>
+        <div class="ticketsBox">
+            <h3 id="header">ONE-day ticket with Early Entry</h3>
+            <p>Ticket for a Specified Date
+                <br>
+                (Entry starts ONE HOUR BEFORE <a href="#hours">Park Operating Hour</a>)
+                <br>
+                - Adult (13 Years Old and Above)
+                <br>
+                - Child (4 to 12 Years Old)
+            </p>
+            <p>
+                Adult <u>SGD55</u> per ticket
+                <br>
+                Child <u>SGD25</u> per ticket
+            </p>
+        </div>
+        <br><br>
+        <div class="ticketsBox">
+            <h3 id="header">ONE-day ticket with Late Entry</h3>
+            <p>Ticket for a Specified Date
+                <br>
+                (Entry from 3PM onwards)
+                <br>
+                - Adult (13 Years Old and Above)
+                <br>
+                - Child (4 to 12 Years Old)
+            </p>
+            <p>
+                Adult <u>SGD41</u> per ticket
+                <br>
+                Child <u>SGD11</u> per ticket
+            </p>
+        </div>
+        <br><br>
+        <div class="ticketsBox">
+            <h3 id="header">Annual Pass ticket</h3>
+            <p>Ticket for 365 DAYS
+                <br>
+                (Start date is the date of first entry into Park)
+            </p>
+            <p><u>SGD80</u> per ticket</p>
+        </div>
+        <br>
+        <div id="leftPadding">
+            <!--users select the type of ticket they want to view, Ala Carte or Package type, here-->
+            <h2 id="package">Ticket type:</h2>
+            <table>
+              <tr>
+                <td>
+                    <div class="otherPageBox">
+                        <a href="#alacarte"><h3>Ala Carte</h3></a>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="currentPageBox">
+                        <h3 id="center">Package</h3>
+                    </div>
+                </td>
+              </tr>
+            </table>
+            <p>*Ages 3 and Below Enter <u>FREE</u></p>
+        </div>
+        <br>
+        <!--information of the types of Packages sold-->
+        <div class="packagesBox familyBackground">
+            <h3>Family package</h3>
+            <p>Tickets for a Specified Date
+                <br>
+                - X2 Adult (13 Years Old and Above) tickets
+                <br>
+                - X2 Child (4 to 12 Years Old) tickets
+            </p>
+            <p>From <u>SGD74</u> per package (U.P. From SGD104)</p>
+        </div>
+        <br>
+        <div class="detailsBox">
+            <h3 id="header">Details</h3>
+            <table>
+                <tr>
+                    <td>
+                        <p>ONE-day tickets</p>
+                        <p>ONE-day ticket with Early Entry</p>
+                        <p>ONE-day tickets with Late Entry</p>
+                    </td>
+                    <td>
+                        <p>:<u>SGD110</u> (U.P. SGD140)</p>
+                        <p>:<u>SGD130</u> (U.P. SGD160)</p>
+                        <p>:<u>SGD74</u> (U.P. SGD104)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div class="packagesBox friendsBackground">
+            <h3>Friends Trip package</h3>
+            <p>Ticket for a Specified Date
+                <br>
+                - X6 Adult (13 Years Old and Above) tickets
+            </p>
+            <p>From <u>SGD206</u> per package (U.P. From SGD246)</p>
+        </div>
+        <br>
+        <div class="detailsBox">
+            <h3 id="header">Details</h3>
+            <table>
+                <tr>
+                    <td>
+                        <p>ONE-day tickets</p>
+                        <p>ONE-day ticket with Early Entry</p>
+                        <p>ONE-day tickets with Late Entry</p>
+                    </td>
+                    <td>
+                        <p>:<u>SGD260</u> (U.P. SGD300)</p>
+                        <p><u>SGD290</u> (U.P. SGD330)</p>
+                        <p>:<u>SGD206</u> (U.P. SGD246)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div class="packagesBox outingBackground">
+            <h3>Outing package</h3>
+            <p>Ticket for a Specified Date
+                <br>
+                - X10 Adult (13 Years Old and Above) tickets
+            </p>
+            <p>From <u>SGD350</u> per package (U.P. From SGD410)</p>
+        </div>
+        <br>
+        <div class="detailsBox">
+            <h3 id="header">Details</h3>
+            <table>
+                <tr>
+                    <td>
+                        <p>ONE-day tickets</p>
+                        <p>ONE-day ticket with Early Entry</p>
+                        <p>ONE-day tickets with Late Entry</p>
+                    </td>
+                    <td>
+                        <p>:<u>SGD440</u> (U.P. SGD500)</p>
+                        <p>:<u>SGD490</u> (U.P. SGD550)</p>
+                        <p>:<u>SGD350</u> (U.P. SGD410)</p>
+                    </td>
+            </table>
+        </div>
+        <br><br>
+        <center>
+            <table id="hours">
+                <tr>
+                    <!--information about the theme park visitors would want to know-->
+                    <th class="informationBox">
+                        <h1 class="textBackgroundColour">Visitors' Information</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>Opening hours
+                                        <br>
+                                        - Early entry
+                                        <br>- Late entry
+                                        <br><br>
+                                        Click <a href="#">here</a> to view
+                                        <br><br><br>
+                                        Parking
+                                        <br>
+                                        - Cars
+                                        <br><br><br><br>
+                                        - Motorcycles
+                                        <br><br>
+                                        Rentals
+                                        <br>
+                                        - Locker
+                                        <br><br><br><br>
+                                        - Wheelchair
+                                        <br>
+                                        - Stroller
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>: 10:00AM - 8:00PM
+                                        <br>
+                                        : 9:00AM
+                                        <br>
+                                        : 3:00PM
+                                        <br><br>
+                                        Park Map.
+                                        <br><br><br><br>
+                                        : First hour $2.18
+                                        <br>
+                                        Subsequent 15 mins $0.55
+                                        <br>
+                                        *Electric vehicles charging services
+                                        <br>
+                                        located at B3 car park.
+                                        <br>
+                                        : $1.64 per entry
+                                        <br><br><br>
+                                        : $4 for ONE hour
+                                        <br>
+                                        $10 for THREE hours
+                                        <br>
+                                        $15 for FIVE hours
+                                        <br>
+                                        $20 for a FULL DAY
+                                        <br>
+                                        : $15 per rent
+                                        <br>
+                                        : $20 per rent
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th></th>
+                    <th class="informationBox">
+                        <!--frequently asked questions about the theme park-->
+                        <h1 class="textBackgroundColour">FAQs</h1>
+                        <p class="qn">How do I purchase tickets?</p>
+                        <p class="ans">You can purchase tickets at our official website <a href="#">here</a>.</p>
+                        <p class="qn">Can I purchase walk-in tickets?</p>
+                        <p class="ans">Yes, you can purchase tickets from the Information Counter from 7:00AM onwards. Sales of tickets for the current day will stop at 7:00PM.</p>
+                        <p class="qn">Are there ATMs where I can withdraw money using the card issued from my country?</p>
+                        <p class="ans">Yes, there are ATM machines available in the Park.</p>
+                        <p class="qn">What is the maximum height limit for Adventure Theme Park Carpark?</p>
+                        <p class="ans">The maximum height limit is 2.5 metres.</p>
+                    </th>
+                </tr>
+            </table>
+        </center>
+    </main>
+    
+    <footer>
+        <div class="footer-section">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Dinings & Shoppings</a></li>
+                <li><a href="#">Attractions</a></li>
+                <li><a href="#">Visitor Information</a></li>
+                <li><a href="#">Park Map</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Tickets & Packages</h3>
+            <ul>
+                <li><a href="#">Buy Tickets</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Address</h3>
+            <address>
+                Adventure Theme Park,<br>
+                123 Adventure Road,<br>
+                Sentosa Island,<br>
+                Singapore, 098765.<br>
+                Contact: +65 9876 5432
+            </address>
+        </div>
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <!-- Add social media links here -->
+        </div>
+    </footer>
+</body>
+</html>
