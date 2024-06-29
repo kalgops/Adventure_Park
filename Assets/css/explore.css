@@ -23,6 +23,7 @@
   body {
     background-color: var(--primary-color);
   }
+  
   /* End of Global Styles */
 
 body {
@@ -33,17 +34,30 @@ body {
 }
 
 header {
-    background-color: #552500;
+    background-color: #1e232b;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
+header nav .logo {
+    order: 1;
+  }
+  header nav .logo img {
+    margin-left: 40px;
+    width: 60px;
+    height: 60px;
+  }
+  header nav .nav-items {
+    order: 2;
+    flex: 1;
+    margin-left: 50px;
+  }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: left;
+    justify-content: right;
 }
 
 nav ul li {
@@ -70,7 +84,7 @@ section {
 }
 
 h1, h2 {
-    color: #00539C;
+    color: #1e232b;
 }
 
 .intro-content, .ride-content, .preview-content {
@@ -89,7 +103,7 @@ h1, h2 {
 }
 
 footer {
-    background-color: #00539C;
+    background-color: #1e232b;
     color: white;
     padding: 1rem 0;
 }
