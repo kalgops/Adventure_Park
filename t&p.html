@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tickets - Ala Carte</title>
+    <title>Tickets & Packages</title>
     <link rel="stylesheet" href= "Assets/css/styles.css">
     <link rel="stylesheet" href= "Assets/css/t&p.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Tickets & Packages Page</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home Page</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Tickets & Packages</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </nav>
+            <div class="menu-icon">
+               <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo">
+               <img src="Assets/Images/logo-white.png" alt="Logo">
+            </div>
+            <div class="nav-items">
+               <ul>
+                  <li><a href="index.html">Home Page</a></li>
+                  <li><a href="explore.html">Explore</a></li>
+                  <li><a href="t&p.html">Tickets & Packages</a></li>
+               </ul>
+            </div>
+            <div class="search-icon">
+               <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+               <span class="fas fa-times"></span>
+            </div>
+            <form action="#">
+               <input type="search" class="search-data" placeholder="Search" required>
+               <button type="submit" class="fas fa-search"></button>
+            </form>
+         </nav>
     </header>
 
     <main>
@@ -277,7 +295,7 @@
                         <!--frequently asked questions about the theme park-->
                         <h1 class="textBackgroundColour">FAQs</h1>
                         <p class="qn">How do I purchase tickets?</p>
-                        <p class="ans">You can purchase tickets at our official website <a href="#">here</a>.</p>
+                        <p class="ans">You can purchase tickets at our official website <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore" target="_blank">here</a>.</p>
                         <p class="qn">Can I purchase walk-in tickets?</p>
                         <p class="ans">Yes, you can purchase tickets from the Information Counter from 7:00AM onwards. Sales of tickets for the current day will stop at 7:00PM.</p>
                         <p class="qn">Are there ATMs where I can withdraw money using the card issued from my country?</p>
@@ -290,37 +308,45 @@
         </center>
     </main>
     
-    <footer>
-        <div class="footer-section">
-            <h3>Explore</h3>
-            <ul>
-                <li><a href="#">Dinings & Shoppings</a></li>
-                <li><a href="#">Attractions</a></li>
-                <li><a href="#">Visitor Information</a></li>
-                <li><a href="#">Park Map</a></li>
-                <li><a href="#">FAQs</a></li>
-            </ul>
+    <footer class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="Assets/Images/logo-white.png" alt="">
         </div>
-        <div class="footer-section">
-            <h3>Tickets & Packages</h3>
-            <ul>
-                <li><a href="#">Buy Tickets</a></li>
-            </ul>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="links">
+            <li><a href="#">Dinings & Shoppings</a></li>
+            <li><a href="#">Attraction</a></li>
+            <li><a href="#">Park Map</a></li>
+          </ul>
         </div>
-        <div class="footer-section">
-            <h3>Address</h3>
-            <address>
-                Adventure Theme Park,<br>
-                123 Adventure Road,<br>
-                Sentosa Island,<br>
-                Singapore, 098765.<br>
-                Contact: +65 9876 5432
-            </address>
+        <div class="footer-col">
+          <h4>Tickets & Packages</h4>
+          <ul class="links">
+            <li><a href="#">Buy Tickets</a></li>
+            <li><a href="#">Visitor Information</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
         </div>
-        <div class="footer-section">
-            <h3>Social Media</h3>
-            <!-- Add social media links here -->
+        <address class="footer-col">
+          <h4>Address</h4>
+          <p>Adventure Theme Park,<br>
+            123 Adventure Road,<br>
+            Sentosa Island,<br>
+            Singapore, 098765.<br>
+            Contact : <a style="color:#c2BAAF;" href="#"><u>9876 5432</u></a></p>
+        </address>
+        <div class="footer-col">
+          <h4>Social Medias</h4>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
         </div>
+      </div>
     </footer>
 </body>
 </html>
