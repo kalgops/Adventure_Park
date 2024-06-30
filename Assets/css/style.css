@@ -142,23 +142,24 @@ nav .logo.space {
 /* End of Content Section Styles */
 
 /* Container Section Styles */
-#container {
+.container {
   display: flex;
   justify-content: space-between;
   padding: 20px 100px;
   flex-wrap: wrap;
+  align-items: center;
 }
-#container .container-list {
+.container .container-list {
   padding: 20px;
   width: 50%;
 } 
-#container .container-list h1 {
+.container .container-list h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   font-family: Acme;
   text-align: center;
 }
-#container .container-list p {
+.container .container-list p {
   font-size: 1.5rem;
   font-family: Alice;
   text-align: left;
