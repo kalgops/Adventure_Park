@@ -139,7 +139,7 @@
   
   /* Footer Styles */
   footer {
-    background-color: #1e232b;
+    background-color: var(--secondary-color);
     color: white;
     padding: 2rem 0;
   }
@@ -162,7 +162,7 @@
   }
   
   .footer-section h3 {
-    color: var(--star);
+    color: var(--primary-color);
     font-family: 'Acme', sans-serif;
     margin-bottom: 1rem;
   }
