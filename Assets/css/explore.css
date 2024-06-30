@@ -4,141 +4,150 @@
     margin: 0;
     box-sizing: border-box;
   }
+  
   html {
     scroll-behavior: smooth;
   }
+  
   @font-face {
     font-family: Alice;
     src: url(../Fonts/Alice.ttf);
   }
+  
   @font-face {
     font-family: Acme;
     src: url(../Fonts/Acme.ttf);
   }
+  
   :root {
     --primary-color: #D3D3D3;
     --secondary-color: #2E2E2E;
     --star: #FED000;
   }
-  body {
-    background-color: var(--primary-color);
-  }
   
-  /* End of Global Styles */
-
-body {
+  body {
     font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-}
-
-header {
+  }
+  
+  /* End of Global Styles */
+  
+  /* Header Styles */
+  header {
     background-color: #1e232b;
     color: #fff;
     padding: 1rem;
     text-align: center;
-}
-header nav .logo {
+  }
+  
+  header nav .logo {
     order: 1;
   }
+  
   header nav .logo img {
     margin-left: -400px;
     width: 60px;
     height: 60px;
   }
+  
   header nav .nav-items {
     order: 2;
     flex: 1;
     margin-left: 10px;
   }
-
-nav ul {
+  
+  nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: right;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin: 0 1rem;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: white;
     text-decoration: none;
-}
-
-main {
+  }
+  
+  /* Main Content Styles */
+  main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
-}
-
-section {
+  }
+  
+  section {
     background-color: white;
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
     color: #1e232b;
-}
-
-.intro-content, .ride-content, .preview-content {
+  }
+  
+  .intro-content, .ride-content, .preview-content {
     display: flex;
     align-items: center;
-}
-
-.intro-content img, .ride-content img, .preview-content img {
+  }
+  
+  .intro-content img, .ride-content img, .preview-content img {
     max-width: 40%;
     margin-right: 1rem;
     border-radius: 8px;
-}
-
-.intro-content p, .ride-content ul, .preview-content p {
+  }
+  
+  .intro-content p, .ride-content ul, .preview-content p {
     max-width: 60%;
-}
-
-footer {
+  }
+  
+  /* Footer Styles */
+  footer {
     background-color: #1e232b;
     color: white;
     padding: 1rem 0;
-}
-
-.footer-content {
+  }
+  
+  .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.footer-nav {
+  }
+  
+  .footer-nav {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.footer-nav li {
+  }
+  
+  .footer-nav li {
     margin: 0.5rem 0;
-}
-
-.footer-nav li a {
+  }
+  
+  .footer-nav li a {
     color: white;
     text-decoration: none;
-}
-
-.address, .social-media {
+  }
+  
+  .address, .social-media {
     text-align: center;
     margin: 1rem 0;
-}
-
-.social-media a {
+  }
+  
+  .social-media a {
     margin: 0 0.5rem;
-}
-
-.social-media img {
+  }
+  
+  .social-media img {
     width: 24px;
     height: 24px;
-}
+  }
+  
