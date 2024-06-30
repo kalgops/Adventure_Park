@@ -23,11 +23,13 @@
     --primary-color: #D3D3D3;
     --secondary-color: #2E2E2E;
     --star: #FED000;
+    --navcolour: #ff0000;
   }
   
   body {
-    font-family: Arial, sans-serif;
-    background-color: var(--primary-color);
+    font-family: Alice;
+    font-family: 'Acme', sans-serif;
+    background-color: var(--secondary-color);
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -56,7 +58,7 @@
   header ul {
     list-style: none;
     display: flex;
-    margin: 10px;
+    margin: 13px;
     padding: 0;
   }
   
@@ -72,7 +74,7 @@
   }
   
   header ul li a:hover {
-    color: var(--star);
+    color: var(--navcolour);
   }
   
   header .search-form {
@@ -102,6 +104,7 @@
     background-color: #e63600;
   }
   
+  
   /* Main Content Styles */
   main {
     max-width: 1200px;
@@ -110,31 +113,35 @@
   }
   
   section {
-    background-color: white;
+    /* background-color: white; */
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: flex-start;
   }
   
   h1, h2 {
     color: #1e232b;
+    margin: 10px;
+
   }
   
   .intro-content, .ride-content, .preview-content {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
   }
   
   .intro-content img, .ride-content img, .preview-content img {
     max-width: 40%;
-    margin-right: 1rem;
+    margin-right: rem;
     border-radius: 8px;
   }
   
-  .intro-content div, .ride-content div, .preview-content div {
-    flex: 1;
+  .intro-content p, .ride-content ul, .preview-content p {
+    max-width: 60%;
+    margin: 10px;
   }
   
   /* Footer Styles */
