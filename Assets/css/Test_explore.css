@@ -142,7 +142,14 @@ h1, h2 {
 .intro-content p, .ride-content ul, .preview-content p {
   max-width: 60%;
   margin: 10px;
+  font-size: 1.25rem; /* Increased font size for paragraph text */
+  line-height: 1.6; /* Increased line height for better readability */
 }
+
+.intro-content div, .ride-content div, .preview-content div {
+  flex: 1;
+  margin-left: 2rem; /* Increased margin for right shift */
+} 
 
 /* Footer Styles */
 footer {
