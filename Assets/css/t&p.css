@@ -11,13 +11,13 @@ h2 {
 h3 {
     
     font-family: Acme;
-    /*so that the opacity will not affect h3 in the packages page*/
+    /*so that the opacity will not affect texts with "<h3>" tags in the packages page*/
     position: relative;
 }
 
 p {
     font-family: Alice;
-    /*so that the opacity will not affect h3 in the packages page*/
+    /*so that the opacity will not affect texts with "<p>" tags in the packages page*/
     position: relative;
 }
 
@@ -44,7 +44,6 @@ a:hover {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 120px;
-/*    height: 76px;*/
     box-shadow: rgb(154, 154, 154) 0px 0px 10px 3px inset;
     color: white;
     text-align: center;
@@ -61,7 +60,6 @@ a:hover {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 120px;
-/*    height: 76px;*/
     text-align: center;
     
 }
@@ -82,7 +80,6 @@ a:hover {
 
 /*design for box displaying information of the types of tickets in Package page*/
 .packagesBox {
-/*    border-radius: 40px;*/
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-left: 30px;
