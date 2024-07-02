@@ -16,7 +16,7 @@ html {
   src: url(../Fonts/Acme.ttf);
 }
 :root {
-  --primary-color: #D3D3D3;
+  --primary-color: #FFFAFA;
   --secondary-color: #2E2E2E;
   --star: #FED000;
 }
@@ -27,7 +27,7 @@ body {
 
 /* Navbar Styles */
 header nav {
-  background: var(--secondary-color);
+  background-color: #552500;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,7 +62,7 @@ header nav .nav-items ul li a {
   text-decoration: none;
 }
 header nav .nav-items ul li a:hover {
-  color: #ff3d00;
+  color: #E8B145;
 }
 header nav .search-icon,
 header nav .cancel-icon,
@@ -100,13 +100,13 @@ header nav form button {
   padding: 0 15px;
   color: #fff;
   font-size: 17px;
-  background: #ff3d00;
+  background: #E8B145;
   border: none;
   border-radius: 2px;
   cursor: pointer;
 }
 header nav form button:hover {
-  background: #e63600;
+  background: #D29B2F;
 }
 header nav .menu-icon span,
 header nav .cancel-icon,
@@ -118,7 +118,7 @@ header nav .search-icon {
 /* Footer Section Styles */
 .footer {
   width: 100%;
-  background: var(--secondary-color);
+  background-color: #552500;
 }
 .footer img {
   width: 100px;
@@ -151,7 +151,7 @@ header nav .search-icon {
   color: #C2BAAF;
 }
 .footer-col .links li a:hover {
-  color: #e63600;
+  color: #E8B145;
 }
 .footer-col p {
   font-family: Alice;
@@ -201,7 +201,7 @@ header nav .search-icon {
   color: #C2BAAF;
 }
 .footer-col .icons i:hover {
-  color: #e63600;
+  color: #E8B145;
 }
 /* End of Footer Section Styles */
 
@@ -333,4 +333,3 @@ header nav .search-icon {
   }
 }
 /* End of Media Queries */
-
