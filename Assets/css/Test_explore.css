@@ -133,14 +133,14 @@ h2 {
   align-items: center;
 }
 
-.intro-content video, .preview-content video {
-  max-width: 40%;
+.intro-content video, .ride-content video {
+  max-width: 100%;
   margin-left: 1rem;
   border-radius: 8px;
 }
 
-.ride-content video {
-  max-width: 40%;
+.preview-content video {
+  max-width: 100%;
   margin-right: 1rem;
   border-radius: 8px;
 }
@@ -165,7 +165,7 @@ h2 {
 /* Slideshow Section Styles */
 .slideshow-container {
   position: relative;
-  max-width: 40%;
+  max-width: 50%;
   margin-left: 1rem;
 }
 
