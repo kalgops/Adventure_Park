@@ -27,8 +27,7 @@ html {
 }
 
 body {
-  font-family: Alice;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Alice', 'Acme', sans-serif;
   background-color: var(--secondary-color);
   margin: 0;
   padding: 0;
@@ -46,8 +45,9 @@ header {
 }
 
 header .logo img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
+  margin-right: 40px;
 }
 
 header nav {
@@ -104,7 +104,6 @@ header .search-form button:hover {
   background-color: #e63600;
 }
 
-
 /* Main Content Styles */
 main {
   max-width: 1200px;
@@ -113,11 +112,9 @@ main {
 }
 
 section {
-  /* background-color: white; */
   margin-bottom: 2rem;
   padding: 1rem;
-  border-radius: 8px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  border-radius: 1px;
   display: flex;
   align-items: flex-start;
 }
@@ -125,7 +122,10 @@ section {
 h1, h2 {
   color: #1e232b;
   margin: 10px;
+}
 
+h2 {
+  font-size: 2.5rem; /* Increased font size for h2 */
 }
 
 .intro-content, .ride-content, .preview-content {
@@ -133,23 +133,34 @@ h1, h2 {
   align-items: center;
 }
 
-.intro-content img, .ride-content img, .preview-content img {
+.intro-content video, .preview-content video {
   max-width: 40%;
-  margin-right: rem;
+  margin-left: 1rem;
   border-radius: 8px;
 }
 
+.ride-content video{
+  max-width: 40%;
+  margin-right: 2rem;
+  border-radius: 8px;
+}
+
+.intro-content .text, .preview-content .text {
+  flex: 1;
+  margin-right: 2rem; /* Increased margin for left alignment */
+}
+
+.ride-content .text{
+  flex: 1;
+  margin-left: 2rem; /* Increased margin for left alignment */
+}
+
 .intro-content p, .ride-content ul, .preview-content p {
-  max-width: 60%;
+  max-width: 100%;
   margin: 10px;
   font-size: 1.25rem; /* Increased font size for paragraph text */
   line-height: 1.6; /* Increased line height for better readability */
 }
-
-.intro-content div, .ride-content div, .preview-content div {
-  flex: 1;
-  margin-left: 2rem; /* Increased margin for right shift */
-} 
 
 /* Footer Styles */
 footer {
@@ -166,8 +177,9 @@ footer {
 }
 
 .footer-content .logo img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
 }
 
 .footer-section {
@@ -226,7 +238,7 @@ footer {
     flex-direction: column;
   }
 
-  .intro-content img, .ride-content img, .preview-content img {
+  .intro-content video, .ride-content video, .preview-content video {
     max-width: 100%;
     margin: 0 0 1rem 0;
   }
