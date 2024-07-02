@@ -139,9 +139,9 @@ h2 {
   border-radius: 8px;
 }
 
-.ride-content video{
+.ride-content video {
   max-width: 40%;
-  margin-right: 2rem;
+  margin-right: 1rem;
   border-radius: 8px;
 }
 
@@ -150,7 +150,7 @@ h2 {
   margin-right: 2rem; /* Increased margin for left alignment */
 }
 
-.ride-content .text{
+.ride-content .text {
   flex: 1;
   margin-left: 2rem; /* Increased margin for left alignment */
 }
@@ -160,6 +160,66 @@ h2 {
   margin: 10px;
   font-size: 1.25rem; /* Increased font size for paragraph text */
   line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Slideshow Section Styles */
+.slideshow-container {
+  position: relative;
+  max-width: 40%;
+  margin-left: 1rem;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
 }
 
 /* Footer Styles */
