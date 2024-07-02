@@ -299,7 +299,8 @@ footer {
   }
 
   .intro-content video, .ride-content video, .preview-content video {
-    max-width: 100%;
+    max-width: 120%;
+    max-height: 150%;
     margin: 0 0 1rem 0;
   }
 
