@@ -74,22 +74,17 @@ h2 {
   border-radius: 8px;
 }
 
-.ride-content video{
-  max-width: 100%;
-  margin-right: 100px;
-  border-radius: 8px;
-  align-content: right;
+.preview-content image{
+  max-width: 0px;
+  margin-right: 6rem;
+  max-height:10px;
+
 }
 
-.preview-content video {
-  max-width: 100%;
-  margin-left: 0rem;
-  border-radius: 8px;
-}
 
 .intro-content .text, .preview-content .text {
-  flex: 1;
-  margin-right: 2rem; /* Increased margin for left alignment */
+  flex: 1 1 100px;
+  margin-right: 10rem; /* Increased margin for left alignment */
 }
 
 .ride-content .text {
@@ -105,15 +100,11 @@ h2 {
   line-height: 1.6; /* Increased line height for better readability */
 }
 
-/* Slideshow Section Styles */
-.slideshow-container {
-  position: relative;
-  max-width: 50%;
-  margin-left: 1rem;
-}
 
 .mySlides {
   display: none;
+  overflow: hidden;
+
 }
 
 .prev, .next {
@@ -174,6 +165,7 @@ h2 {
 
   .intro-content, .ride-content, .preview-content {
     flex-direction: column;
+
   }
 
   .intro-content video, .ride-content video, .preview-content video {

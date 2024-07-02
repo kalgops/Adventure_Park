@@ -1,93 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon_logo/favicon.ico">
-    <link rel="stylesheet" href="Assets/css/Test_explore.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <title>Adventure Theme Park</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="Assets/favicon_logo/favicon.ico">
+  <link rel="stylesheet" href="Assets/css/explore.css">
+  <link rel="stylesheet" href="Assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Explore</title>
 </head>
 <body>
+    <!--HEADER START-->
     <header>
-        <nav>
-            <div class="menu-icon">
-                <span class="fas fa-bars"></span>
-            </div>
-            <div class="logo">
-                <img src="Assets/Images/logo-white.png" alt="Logo">
-            </div>
-            <ul>
+      <nav>
+          <div class="menu-icon">
+             <span class="fas fa-bars"></span>
+          </div>
+          <div class="logo">
+             <img src="Assets/Images/logo-white.png" alt="Logo">
+          </div>
+          <div class="nav-items">
+             <ul>
                 <li><a href="index.html">Home Page</a></li>
                 <li><a href="explore.html">Explore</a></li>
-                <li><a href="tickets.html">Tickets & Packages</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
+                <li><a href="t&p.html">Tickets & Packages</a></li>
+             </ul>
+          </div>
+          <div class="search-icon">
+             <span class="fas fa-search"></span>
+          </div>
+          <div class="cancel-icon">
+             <span class="fas fa-times"></span>
+          </div>
+          <form action="#">
+             <input type="search" class="search-data" placeholder="Search" required>
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+       </nav>
+  </header>
+  <!--HEADER END-->
 
-    <main>
-        <section class="preview">
-            <h2>Here's a preview of our majestic theme park!</h2>
-            <div class="preview-content">
-                <img src="Assets\Images\theme park preview.jpg" alt="Theme Park Preview" width="300">
-                <p>Start your adventure here! Purchase tickets, grab a map, and get ready for a day of fun. Enjoy a relaxing meal surrounded by nature. Picnic tables and benches available on a first-come, first-served basis. Stop by the Visitor Center for pamphlets, information, and souvenirs. Our friendly staff are here to help make your visit unforgettable. Convenient restroom facilities located throughout the park for your comfort and convenience. Immerse yourself in the beauty of our botanical gardens. Discover a variety of plants from around the world.</p>
-            </div>
-        </section>
+  <main>
+    <section class="intro">
+      <div class="intro-content">
+        <video src="Assets/Video/Food.mp4" autoplay muted loop width="50%"></video>
+        <div class="text">
+          <h2>Welcome to Galactic Grill & Spaceport Cafe!</h2>
+          <p>A magical marketplace where guests can dine on delicious foods and shop for whimsical treasures in our shopping outlets. Visitors can explore a variety of shops selling unique items and then enjoy a meal at one of the themed dining areas within the market. Each of these themed dining and shopping experiences provides an immersive and enjoyable experience for visitors, combining unique culinary delights with a vibrant shopping atmosphere that enhances the overall theme park adventure.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="rides">
+      <div class="ride-content">
+        <video src="Assets/Video/Rides.mp4" autoplay muted loop width="50%"></video>
+        <div class="text">
+          <h2>Are you ready to challenge yourself in our rides?</h2>
+          <ul>
+            <li><strong>Thunderbolt Fury:</strong> The rumble of thunder and flashes of lightning set the atmosphere. The ride begins with a steep, heart-pounding ascent, giving you a panoramic view of the park.</li>
+            <li><strong>Poseidon's Plunge:</strong> Embark on serene underwater ruins, wild rapids, thrilling twists, and a final plunge into a splash-filled lagoon!</li>
+            <li><strong>Virtual Vortex:</strong> Experience a thrilling VR ride through a futuristic city, navigating portals and saving it from an interdimensional crisis!</li>
+            <li><strong>Tiny Tykes Express:</strong> Climb aboard a charming mini-train journey through vibrant landscapes, encountering friendly characters, perfect for young adventurers!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <section class="rides">
-            <h2>Are you ready to challenge yourself in our rides?</h2>
-            <div class="ride-content">
-                <ul>
-                    <li><strong>Thunderbolt Fury:</strong> The rumble of thunder and flashes of lightning set the atmosphere. The ride begins with a steep, heart-pounding ascent, giving you a panoramic view of the park.</li>
-                    <li><strong>Poseidon's Plunge:</strong> Embark on serene underwater ruins, wild rapids, thrilling twists, and a final plunge into a splash-filled lagoon!</li>
-                    <li><strong>Virtual Vortex:</strong> Experience a thrilling VR ride through a futuristic city, navigating portals and saving it from an interdimensional crisis!</li>
-                    <li><strong>Tiny Tykes Express:</strong> Climb aboard a charming mini-train journey through vibrant landscapes, encountering friendly characters, perfect for young adventurers!</li>
-                </ul>
-                <img src="\Assets\Images\thrilling ride picture.jpg" alt="Theme Park Rides" width="300">
-            </div>
-        </section>
+    <section class="preview">
+      <div class="preview-content">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <video src="Assets/Video/Theme_park_map.mp4" autoplay muted loop width="100%"></video>
+          </div>
+          <div class="mySlides fade">
+            <img src="Assets/images/theme_park_preview.jpg" alt="Theme Park Preview" width="100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+        </div>
+        <div class="text">
+          <h2>Here's a preview of our majestic theme park!</h2>
+          <p>Start your adventure here! Purchase tickets, grab a map, and get ready for a day of fun. Enjoy a relaxing meal surrounded by nature. Picnic tables and benches available on a first-come, first-served basis. Stop by the Visitor Center for pamphlets, information, and souvenirs. Our friendly staff are here to help make your visit unforgettable. Convenient restroom facilities located throughout the park for your comfort and convenience. Immerse yourself in the beauty of our botanical gardens. Discover a variety of plants from around the world.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <section class="intro">
-            <h2>Welcome to Galactic Grill & Spaceport Cafe!</h2>
-            <div class="intro-content">
-                <img src="Assets/images/cafe.jpg" alt="Galactic Grill & Spaceport Cafe" width="300">
-                <p>A magical marketplace where guests can dine on delicious foods and shop for whimsical treasures in our shopping outlets. Visitors can explore a variety of shops selling unique items and then enjoy a meal at one of the themed dining areas within the market. Each of these themed dining and shopping experiences provides an immersive and enjoyable experience for visitors, combining unique culinary delights with a vibrant shopping atmosphere that enhances the overall theme park adventure.</p>
-            </div>
-        </section>
-    </main>
+<!-- FOOTER START -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <img src="Assets/Images/logo-white.png" alt="">
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul class="links">
+        <li><a href="#">Dinings & Shoppings</a></li>
+        <li><a href="#">Attraction</a></li>
+        <li><a href="#">Park Map</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Tickets & Packages</h4>
+      <ul class="links">
+        <li><a href="#">Buy Tickets</a></li>
+        <li><a href="#">Visitor Information</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <address class="footer-col">
+      <h4>Address</h4>
+      <p>Adventure Theme Park,<br>
+        123 Adventure Road,<br>
+        Sentosa Island,<br>
+        Singapore, 098765.<br>
+        Contact : <a style="color:#c2BAAF;" href="#">9876 5432</a></p>
+    </address>
+    <div class="footer-col">
+      <h4>Social Medias</h4>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-    <footer>
-        <div class="footer-section">
-            <h3>Explore</h3>
-            <ul>
-                <li><a href="#">Dinings & Shoppings</a></li>
-                <li><a href="#">Attractions</a></li>
-                <li><a href="#">Visitor Information</a></li>
-                <li><a href="#">Park Map</a></li>
-                <li><a href="#">FAQs</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Tickets & Packages</h3>
-            <ul>
-                <li><a href="#">Buy Tickets</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Address</h3>
-            <address>
-                Adventure Theme Park,<br>
-                123 Adventure Road,<br>
-                Sentosa Island,<br>
-                Singapore, 098765.<br>
-                Contact: +65 9876 5432
-            </address>
-        </div>
-        <div class="footer-section">
-            <h3>Social Media</h3>
-            <!-- Add social media links here -->
-        </div>
-    </footer>
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
 </body>
 </html>
