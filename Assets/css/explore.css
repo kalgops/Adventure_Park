@@ -58,26 +58,26 @@ h2 {
   font-size: 2.5rem; /* Increased font size for h2 */
 }
 
-.intro-content, .preview-content, .ride-content {
+.intro-content, .ride-content {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.intro-content .media, .ride-content .media, .preview-content .media {
+.intro-content .media, .ride-content .media {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.intro-content video, .ride-content video, .preview-content img {
+.intro-content video, .ride-content video {
   width: 100%;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
 
-.intro-content .text, .preview-content .text, .ride-content .text {
+.intro-content .text, .ride-content .text {
   flex: 2;
 }
 
@@ -88,7 +88,31 @@ h2 {
   line-height: 1.6; /* Increased line height for better readability */
 }
 
-.preview-content ul li{
+/* Preview Content Styles */
+.preview-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-content .media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  object-fit: cover;
+}
+
+.preview-content .text {
+  flex: 2;
+}
+
+.preview-content ul li {
   margin-left: 100px;
 }
 
