@@ -5,27 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="Assets/favicon_logo/favicon.ico">
   <link rel="stylesheet" href="Assets/css/explore.css">
+  <link rel="stylesheet" href="Assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <title>Explore</title>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="Assets/Images/logo-white.png" alt="Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="t&p.html">Tickets & Packages</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </nav>
-    <div class="search-form">
-      <input type="text" placeholder="Search">
-      <button type="submit"><i class="fas fa-search"></i></button>
-    </div>
+    <!--HEADER START-->
+    <header>
+      <nav>
+          <div class="menu-icon">
+             <span class="fas fa-bars"></span>
+          </div>
+          <div class="logo">
+             <img src="Assets/Images/logo-white.png" alt="Logo">
+          </div>
+          <div class="nav-items">
+             <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="t&p.html">Tickets & Packages</a></li>
+             </ul>
+          </div>
+          <div class="search-icon">
+             <span class="fas fa-search"></span>
+          </div>
+          <div class="cancel-icon">
+             <span class="fas fa-times"></span>
+          </div>
+          <form action="#">
+             <input type="search" class="search-data" placeholder="Search" required>
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+       </nav>
   </header>
+  <!--HEADER END-->
 
   <main>
     <section class="intro">
@@ -78,50 +91,48 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section logo">
-        <img src="Assets/Images/logo-white.png" alt="Adventure Theme Park Logo">
-      </div>
-      <div class="footer-section">
-        <h3>Explore</h3>
-        <ul class="footer-nav">
-          <li><a href="#">Dinings & Shoppings</a></li>
-          <li><a href="#">Attractions</a></li>
-          <li><a href="#">Visitor Information</a></li>
-          <li><a href="#">Park Map</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Tickets & Packages</h3>
-        <ul class="footer-nav">
-          <li><a href="#">Buy Tickets</a></li>
-          <li><a href="#">Visitor Information</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Address</h3>
-        <address>
-          Adventure Theme Park,<br>
-          123 Adventure Road,<br>
-          Sentosa Island,<br>
-          Singapore, 098765.<br>
-          Contact: +65 9876 5432
-        </address>
-      </div>
-      <div class="footer-section">
-        <h3>Social Media</h3>
-        <div class="social-media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
+<!-- FOOTER START -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <img src="Assets/Images/logo-white.png" alt="">
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul class="links">
+        <li><a href="#">Dinings & Shoppings</a></li>
+        <li><a href="#">Attraction</a></li>
+        <li><a href="#">Park Map</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Tickets & Packages</h4>
+      <ul class="links">
+        <li><a href="#">Buy Tickets</a></li>
+        <li><a href="#">Visitor Information</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <address class="footer-col">
+      <h4>Address</h4>
+      <p>Adventure Theme Park,<br>
+        123 Adventure Road,<br>
+        Sentosa Island,<br>
+        Singapore, 098765.<br>
+        Contact : <a style="color:#c2BAAF;" href="#">9876 5432</a></p>
+    </address>
+    <div class="footer-col">
+      <h4>Social Medias</h4>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
+<!-- FOOTER END -->
   
   <script>
     let slideIndex = 1;
