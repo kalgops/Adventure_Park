@@ -1,13 +1,49 @@
+h1 {
+    
+    font-family: Acme;
+}
+
+h2 {
+    
+    font-family: Acme;
+}
+
+h3 {
+    
+    font-family: Acme;
+    /*so that the opacity will not affect texts with "<h3>" tags in the packages page*/
+    position: relative;
+}
+
+p {
+    font-family: Alice;
+    /*so that the opacity will not affect texts with "<p>" tags in the packages page*/
+    position: relative;
+}
+
+a {
+    color: #E8B145;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D29B2F;
+}
+
+#leftPadding {
+    padding-left: 280px;
+}
+
 /*box of the current page, Ala Carte or Packages page, will be coloured*/
 .currentPageBox {
+    font-family: Acme;
     border-radius: 30px;
     background-color: #552500;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    width: 100px;
-/*    height: 76px;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 120px;
     box-shadow: rgb(154, 154, 154) 0px 0px 10px 3px inset;
     color: white;
     text-align: center;
@@ -15,21 +51,17 @@
 
 /*box of the other page, Ala Carte or Packages page, will not be coloured*/
 .otherPageBox {
+    font-family: Acme;
     border-radius: 30px;
     background-color: white;
     border: 3px solid #552500;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    width: 100px;
-/*    height: 76px;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 120px;
     text-align: center;
     
-}
-
-#leftPadding {
-    padding-left: 230px;
 }
 
 /*design for box displaying information of the types of tickets in Ala Carte page*/
@@ -37,10 +69,10 @@
     border-radius: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
     width: 700px;
-    height: 210px;
+    height: 235px;
     margin: auto;
     box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px;
     background-color: white;
@@ -48,13 +80,11 @@
 
 /*design for box displaying information of the types of tickets in Package page*/
 .packagesBox {
-/*    border-radius: 40px;*/
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 20px;
     width: 700px;
     height: 175px;
     margin: auto;
@@ -68,14 +98,15 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     width: 700px;
+    height: 175px;
     margin: auto;
     box-shadow: rgb(114, 114, 114) 0px 0px 10px 8px;
     background-color: white;
 }
 
-/*design for detail boxs' header*/
+/*design for detail box header*/
 #header {
     margin-bottom: 0;
     align-items: center;
@@ -147,16 +178,6 @@
     }
 }
 
-/*so that the opacity will not affect h3 in the packages page*/
-h3 {
-    position: relative;
-}
-
-/*so that the opacity will not affect p in the packages page*/
-p {
-    position: relative;
-}
-
 /*design for box displaying "Visitors' Information" & "FAQs"*/
 .informationBox {
     border-radius: 40px;
@@ -187,5 +208,6 @@ p {
     font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 5px;
     padding-bottom: 20px;
 }
