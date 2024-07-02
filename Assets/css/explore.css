@@ -58,39 +58,27 @@ h2 {
   font-size: 2.5rem; /* Increased font size for h2 */
 }
 
-.intro-content, .preview-content {
+.intro-content, .preview-content, .ride-content {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
-.ride-content{
-  display: flex;
-  align-items: left;
-}
-
-.intro-content video {
-  max-width: 100%;
-  margin-left: 1rem;
-  border-radius: 8px;
-}
-
-.preview-content image{
-  max-width: 0px;
-  margin-right: 6rem;
-  max-height:10px;
-
-}
-
-
-.intro-content .text, .preview-content .text {
-  flex: 1 1 100px;
-  margin-right: 10rem; /* Increased margin for left alignment */
-}
-
-.ride-content .text {
+.intro-content .media, .ride-content .media, .preview-content .media {
   flex: 1;
-  margin-left: 0rem; /* Increased margin for left alignment */
-  align-items: left;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-content video, .ride-content video, .preview-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.intro-content .text, .preview-content .text, .ride-content .text {
+  flex: 2;
 }
 
 .intro-content p, .ride-content ul, .preview-content p {
@@ -100,62 +88,9 @@ h2 {
   line-height: 1.6; /* Increased line height for better readability */
 }
 
-
-.mySlides {
-  display: none;
-  overflow: hidden;
-
+.preview-content ul li{
+  margin-left: 100px;
 }
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: 0.4} 
-  to {opacity: 1}
-}
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -165,21 +100,19 @@ h2 {
 
   .intro-content, .ride-content, .preview-content {
     flex-direction: column;
-
   }
 
-  .intro-content video, .ride-content video, .preview-content video {
-    max-width: 120%;
-    max-height: 150%;
+  .intro-content video, .ride-content video, .preview-content img {
+    max-width: 100%;
     margin: 0 0 1rem 0;
   }
 
-  .footer-content {
+  .footer-row {
     flex-direction: column;
     text-align: center;
   }
 
-  .footer-section {
+  .footer-col {
     padding: 1rem 0;
   }
 }
