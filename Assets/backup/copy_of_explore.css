@@ -71,10 +71,13 @@ h2 {
 }
 
 .intro-content img, .ride-content img, .preview-content img {
-  width: 650px; /* Increased width */
-  height: auto; /* Maintain aspect ratio */
+  width: 600px; /* Set width to 100% of the container */
+  height: 400px; /* Maintain aspect ratio */
   border-radius: 8px;
   object-fit: cover;
+}
+.ride-content img{
+  align-items: right;
 }
 
 .intro-content .text, .ride-content .text, .preview-content .text {
@@ -98,7 +101,7 @@ h2 {
     flex-direction: column;
   }
 
-  .intro-content video, .ride-content video, .preview-content img {
+  .intro-content img, .ride-content img, .preview-content img {
     max-width: 100%;
     margin: 0 0 1rem 0;
   }
