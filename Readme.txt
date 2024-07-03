@@ -1,0 +1,1 @@
+<Put URL of the static web site here>
