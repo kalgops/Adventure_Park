@@ -44,10 +44,9 @@ main {
 section {
   margin-bottom: 2rem;
   padding: 1rem;
-  border-radius: 8px; /* Increase border radius for smoother corners */
+  border-radius: 1px;
   display: flex;
-  flex-direction: column; /* Ensure content stacks vertically */
-  align-items: center; /* Center content horizontally */
+  align-items: flex-start;
 }
 
 h1, h2 {
@@ -61,35 +60,25 @@ h2 {
 
 .intro-content, .ride-content, .preview-content {
   display: flex;
-  flex-direction: column; /* Stack media and text vertically */
-  align-items: center; /* Center content horizontally */
+  align-items: center;
   gap: 1rem;
 }
 
 .intro-content .media, .ride-content .media, .preview-content .media {
-  width: 100%; /* Ensure media fills its container */
-  max-width: 100%; /* Ensure media does not exceed its container */
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.intro-content video, .ride-content video {
-  width: 100%; /* Ensure video fills its container */
-  max-width: 100%; /* Ensure video does not exceed its container */
+.intro-content img, .ride-content img, .preview-content img {
+  width: 650px; /* Increased width */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners for videos */
-  object-fit: cover; /* Maintain aspect ratio and cover container */
-}
-
-.preview-content img {
-  width: 100%; /* Ensure image fills its container */
-  max-width: 100%; /* Ensure image does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners for images */
-  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .intro-content .text, .ride-content .text, .preview-content .text {
-  flex: 1; /* Let text content expand to fill remaining space */
-  max-width: 100%; /* Ensure text content does not exceed its container */
+  flex: 2;
 }
 
 .intro-content p, .ride-content ul, .preview-content p {
@@ -99,53 +88,14 @@ h2 {
   line-height: 1.6; /* Increased line height for better readability */
 }
 
-
-/* Preview Content Styles */
-.preview-content {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.preview-content .media {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.preview-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 0px;
-  object-fit: cover;
-}
-
-.preview-content .text {
-  flex: 2;
-}
-
-.preview-content ul li {
-  margin-left: 100px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-
-  intro-content video, .ride-content video, .preview-content img {
-    width: 200%; /* Ensure media fills its container */
-    max-width: 200%; /* Ensure media does not exceed its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for media */
-    object-fit: cover; /* Maintain aspect ratio and cover container */
-    margin-bottom: 1rem; /* Add space between sections */
-  }
   header nav {
     flex-direction: column;
   }
 
   .intro-content, .ride-content, .preview-content {
     flex-direction: column;
-    align-items: center;
   }
 
   .intro-content video, .ride-content video, .preview-content img {
