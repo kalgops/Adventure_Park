@@ -63,7 +63,7 @@ function showSlides(n) {
 
 // Function to redirect to the checkout page
 function redirectToCheckout() {
-    window.location.href = 'tickets.html';
+    window.location.href = 't&p.html';
 }
 
 // Testimonial slider functionality
